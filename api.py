@@ -8,7 +8,7 @@ from resources.authentication import Login, Register
 from config import config
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"*": {"origins": "*"}})
 api = Api(app)
 
 @app.route('/', methods=["GET"])
