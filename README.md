@@ -1,4 +1,6 @@
-# WildHacks23 Backend Service
+# MoveMentor
+
+> Backend Service For WildHacks 2023
 
 ### Setup 🛠️
 

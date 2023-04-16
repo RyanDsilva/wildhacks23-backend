@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from flask_restful import Api
 from flask_cors import CORS
 
-from resources.dummy import DummyResource
+from resources.sequence import SequenceResource
 from resources.authentication import Login, Register
 
 from config import config
@@ -15,7 +15,7 @@ api = Api(app)
 def index():
     return jsonify({"status" : "ok"})
 
-api.add_resource(DummyResource, '/api/v1/dummy')
+api.add_resource(SequenceResource, '/api/v1/sequence')
 api.add_resource(Login, '/api/v1/login')
 api.add_resource(Register, '/api/v1/register')
 
